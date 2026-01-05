@@ -4,9 +4,9 @@ import './colaborador.css'
 const Colaborador = ({ colaborador, corDeFundo, aoDeletar }) => {
     return (<div className="colaborador">
         <MdDeleteForever
+            size={25}
             className='deletar'
             onClick={() => aoDeletar(colaborador.id)}
-            size={25}
         />
         <div className="cabecalho" style={{ backgroundColor: corDeFundo }}>
             <img src={colaborador.imagem} alt={colaborador.nome} />
